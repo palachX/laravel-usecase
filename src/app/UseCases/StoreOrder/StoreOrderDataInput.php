@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\UseCases\Orders;
+namespace App\UseCases\StoreOrder;
 
 use App\Models\User;
 use Spatie\LaravelData\Attributes\FromAuthenticatedUser;
@@ -19,6 +19,6 @@ final class StoreOrderDataInput extends Data
     public function __construct(
         #[FromAuthenticatedUser]
         public readonly User $user,
-        public readonly array $items,
+        public readonly ?array $items,
     ) {}
 }

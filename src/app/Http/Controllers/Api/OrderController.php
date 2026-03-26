@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Api;
 
-use App\UseCases\Orders\StoreOrderDataInput;
-use App\UseCases\Orders\StoreOrderHandler;
+use App\UseCases\StoreOrder\StoreOrderDataInput;
+use App\UseCases\StoreOrder\StoreOrderHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\UseCases\Orders;
+namespace App\UseCases\StoreOrder;
 
 use App\Enums\OrderStatus;
 use App\Models\Order;

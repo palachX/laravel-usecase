@@ -53,7 +53,7 @@ paths:
                   data:
                     type: object
                     properties:
-                      orderId:
+                      order_id:
                         type: integer
                         example: 1
                       status:

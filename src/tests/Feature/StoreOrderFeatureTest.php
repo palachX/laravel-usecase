@@ -31,7 +31,7 @@ class StoreOrderFeatureTest extends TestCase
         $response->assertStatus(200);
 
         $response->assertJsonStructure([
-            'orderId',
+            'order_id',
             'status',
         ]);
 
