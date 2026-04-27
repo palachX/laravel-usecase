@@ -12,8 +12,8 @@ use Illuminate\Database\Eloquent\Builder;
  */
 final class UserBuilder extends Builder
 {
-    public function whereActive(): self
+    public function whereActive(bool $isActive = true): self
     {
-        return $this->where('is_active', true);
+        return $this->where('is_active', $isActive);
     }
 }
