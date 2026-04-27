@@ -16,6 +16,7 @@ class UserFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
+            'is_active' => $this->faker->boolean(),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ];

@@ -15,6 +15,7 @@ RUN apk --update --no-cache add  \
     git \
     libpq-dev \
     linux-headers \
+    rabbitmq-c-dev \
     && pecl install amqp-2.1.2 redis-6.0.2 \
     && docker-php-ext-install pdo_pgsql sockets \
     && docker-php-ext-enable amqp redis \

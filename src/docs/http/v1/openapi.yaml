@@ -14,6 +14,33 @@ components:
       bearerFormat: token
 
 paths:
+  /api/users:
+    get:
+      summary: Fetch user list
+      security:
+        - sanctum: []
+      responses:
+        '200':
+          description: User list fetched successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        name:
+                          type: string
+                          example: John Doe
+                        is_active:
+                          type: boolean
+                          example: true
   /api/orders:
     post:
       summary: Create a new order
